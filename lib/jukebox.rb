@@ -20,7 +20,10 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  puts "Playing #{songs[input.to_i - 1]}"
+  if input.is_a? Integer
+    puts "Playing #{songs[input.to_i - 1]}"
+  elsif input.is_a? String
+    puts "Playing #{input}"
 end
 def exit_jukebox
   puts "Goodbye"
