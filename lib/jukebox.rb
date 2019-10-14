@@ -20,7 +20,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if input < songs.length
+  if input.is_a? Integer and input < songs.length
 
       puts "#{songs[input]}"
     #else
