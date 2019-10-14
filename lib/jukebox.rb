@@ -20,7 +20,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if input.is_a? Integer
+  if input > 0
     puts "Playing #{songs[input.to_i - 1]}"
   elsif input.is_a? String
     puts "Playing #{input}"
