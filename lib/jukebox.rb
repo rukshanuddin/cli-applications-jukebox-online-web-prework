@@ -31,6 +31,7 @@ def play(songs)
       puts "Plauing #{input}"
     else
       puts "Inv"
+    end
   end
 end
 def exit_jukebox
