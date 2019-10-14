@@ -21,7 +21,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
   if input.to_i > 0 && input.to_i <9
-    puts "Playing #{songs[input.to_i]}"
+    puts "#{songs[input.to_i]}"
   elsif songs.join.include?(input)
     puts "Playing #{input}"
   else
