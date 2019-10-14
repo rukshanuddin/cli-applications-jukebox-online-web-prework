@@ -24,6 +24,7 @@ def play(songs)
     puts "Playing #{songs[input.to_i - 1]}"
   elsif input.is_a? String
     puts "Playing #{input}"
+  end
 end
 def exit_jukebox
   puts "Goodbye"
