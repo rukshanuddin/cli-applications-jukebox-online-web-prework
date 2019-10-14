@@ -25,10 +25,10 @@ def play(songs)
 
       puts "Playing #{input}"
     else
-      puts "Inavlid input"
+      puts "Invalid input, please try again"
     end
   elsif input < songs.length
-      puts "Playing #{songs[input]}"
+      puts songs[input]
     #  puts "Invalid input, please try again"
     #end
   #else
