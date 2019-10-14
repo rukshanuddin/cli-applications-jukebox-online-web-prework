@@ -27,7 +27,7 @@ def play(songs)
     else
       puts "Invalid input, please try again"
     end
-  elsif input < songs.length
+  elsif input.to_i < songs.length
       puts songs[input]
     #  puts "Invalid input, please try again"
     #end
