@@ -28,7 +28,7 @@ def play(songs)
     end
   else
     if input  < (songs.length + 1)
-      puts "Phoenix - 1901"
+      puts "Playing #{songs[input]}"
     else
       puts "Invalid input, please try again"
     end
