@@ -32,7 +32,7 @@ def play(songs)
     else
       puts "Invalid input, please try again"
     end
-end
+#end
 end
 def exit_jukebox
   puts "Goodbye"
