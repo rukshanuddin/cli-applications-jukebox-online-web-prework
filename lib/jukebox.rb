@@ -23,12 +23,12 @@ def play(songs)
   if input.is_a? Integer
 
       puts "#{songs[input]}"
-    else
-      puts "Invalid input, please try again"
-    end
-  else
-    if input  < (songs.length + 1)
-      puts "Playing #{songs[input]}"
+    #else
+    #  puts "Invalid input, please try again"
+    #end
+  #else
+  #  if input  < (songs.length + 1)
+  #    puts "Playing #{songs[input]}"
     else
       puts "Invalid input, please try again"
     end
