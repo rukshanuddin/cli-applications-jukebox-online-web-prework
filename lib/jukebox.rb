@@ -23,7 +23,7 @@ def play(songs)
   if input.is_a? String and songs.include?(input)
 
       puts "Playing #{input}"
-  elsif input.is_a? Integer and input < songs.length
+  elsif input.is_a? Integer 
       puts "Playing #{songs[input]}"
     #  puts "Invalid input, please try again"
     #end
