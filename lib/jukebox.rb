@@ -27,15 +27,14 @@ def play(songs)
     else
       puts "Invalid input, please try again"
     end
-  elsif input.to_i < songs.length
-      puts songs[input]
+
     #  puts "Invalid input, please try again"
     #end
   #else
   #  if input  < (songs.length + 1)
   #    puts "Playing #{songs[input]}"
     else
-      puts "Invalid input, please try again"
+      puts "#{songs[input]}"
     end
 #end
 end
