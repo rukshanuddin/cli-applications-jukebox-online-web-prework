@@ -27,7 +27,7 @@ def play(songs)
       puts "Invalid input, please try again"
     end
   elsif input.is_a? Integer
-    if input  < songs.length
+    if input  < (songs.length + 1)
       puts "#{songs[input]}"
     else
       puts "Invalid input, please try again"
