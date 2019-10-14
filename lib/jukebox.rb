@@ -20,10 +20,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if input.is_a? String and songs.include?(input)
+  if input.is_a? String
+    if songs.include?(input)
 
       puts "Playing #{input}"
-  elsif input.is_a? Integer 
+    else
+      puts "Inavlid input"
+  elsif input < songs.length
       puts "Playing #{songs[input]}"
     #  puts "Invalid input, please try again"
     #end
