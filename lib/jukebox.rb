@@ -20,19 +20,10 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if input.kind_of? == Integer
-    if input < songs.length && input > 0
-      puts "Playing #{song[input]}"
-    else
-      puts "Invalid input, please try again"
-    end
-  else
-    if songs.include?(input)
-      puts "Plauing #{input}"
-    else
-      puts "Inv"
-    end
-  end
+  if input.to_i > 0 && input.to_i <9
+    puts"Playing #{song[input]}"
+  elseif songs.join.include?(input)
+  puts "Playing #{input}"
 end
 def exit_jukebox
   puts "Goodbye"
