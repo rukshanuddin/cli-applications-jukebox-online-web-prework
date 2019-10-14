@@ -23,10 +23,10 @@ def play(songs)
   if songs.any?(input)
     puts "#{input}"
   elsif input.is_a? Integer
-    if input  <= songs.length
+    if input  < songs.length
       puts "#{songs[input]}"
     else
-      puts ""
+      puts "#{songs[input]}"
     end
   else
   end
