@@ -23,7 +23,8 @@ def play(songs)
   if input.to_i > 0 && input.to_i <9
     puts"Playing #{song[input]}"
   elseif songs.join.include?(input)
-  puts "Playing #{input}"
+    puts "Playing #{input}"
+  end  
 end
 def exit_jukebox
   puts "Goodbye"
